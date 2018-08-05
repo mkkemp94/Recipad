@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_recipe">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="28dp"
+        android:text="Start"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/recipe_button"
+        android:layout_below="@+id/instruction_time"
+        android:layout_toStartOf="@+id/instruction_time" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:background="@drawable/recipe_button"
+        android:text="Reset"
+        android:layout_alignTop="@+id/btnStart"
+        android:layout_toEndOf="@+id/instruction_time" />
+
+    <TextView
+        android:id="@+id/instruction_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Clock"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/instruction_step"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Next Instruction"
+        android:background="@drawable/recipe_button"
+        android:id="@+id/next_instruction_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Instruction"
+        android:id="@+id/instruction_step"
+        android:layout_marginTop="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"/>
+
+</RelativeLayout>

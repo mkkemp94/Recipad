@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Edit Instruction"
+        android:gravity="center_horizontal"
+        android:background="#000"
+        android:textColor="#fff"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Instruction Name"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_instruction"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.82"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Instruction Time"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hours    "
+            android:id="@+id/plainTimeHr"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/plainTimeMin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minutes "
+            android:id="@+id/plainTimeMin"
+            android:layout_alignTop="@+id/plainTimeSec"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seconds"
+            android:id="@+id/plainTimeSec"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edit_hours"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:layout_below="@+id/plainTimeHr"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/plainTimeHr" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edit_minutes"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:layout_alignBottom="@+id/edit_hours"
+            android:layout_alignStart="@+id/plainTimeMin"
+            android:layout_alignEnd="@+id/plainTimeMin" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edit_seconds"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:layout_alignBottom="@+id/edit_minutes"
+            android:layout_alignStart="@+id/plainTimeSec" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

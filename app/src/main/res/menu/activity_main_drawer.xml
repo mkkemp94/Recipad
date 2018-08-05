@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/grocery_list"
+            android:title="Shopping List" />
+        <item
+            android:id="@+id/inventory_list"
+            android:title="Inventory" />
+        <item
+            android:id="@+id/recipe_book"
+            android:title="Recipe Book" />
+<!--
+        <item
+            android:id="@+id/help"
+            android:title="Help" />
+            -->
+    </group>
+
+</menu>
